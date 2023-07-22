@@ -1,7 +1,8 @@
-package ru.studyguk.composition
+package ru.studyguk.composition.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ru.studyguk.composition.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
