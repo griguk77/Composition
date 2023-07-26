@@ -22,6 +22,7 @@ class GameFinishedFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         parseArgs()
+        Log.d("RRR", gameResult.toString())
     }
 
     private fun parseArgs() {

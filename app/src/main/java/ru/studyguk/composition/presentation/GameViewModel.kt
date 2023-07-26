@@ -64,6 +64,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
         getGameSettings(level)
         startTimer()
         generateQuestion()
+        updateProgress()
     }
 
     fun chooseAnswer(number: Int) {
@@ -74,7 +75,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun updateProgress() {
         val percent = calculatePercentOfRightAnswers()
-        _percentOfRightAnswers.value
+        _percentOfRightAnswers.value = percent
         _progressAnswers.value = String.format(
             context.resources.getString(R.string.progressAnswers),
             countOfRightAnswers,
@@ -85,7 +86,10 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun calculatePercentOfRightAnswers(): Int {
-        return (countOfRightAnswers / countOfQuestions.toDouble()).toInt()
+        if (countOfQuestions == 0) {
+            return 0
+        }
+        return ((countOfRightAnswers / countOfQuestions.toDouble()) * 100).toInt()
     }
 
     private fun checkAnswer(number: Int) {
