@@ -10,44 +10,44 @@
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="24sp"
         android:layout_margin="16dp"
-        android:text="@string/chooseLevelText" />
-    
+        android:text="@string/chooseLevelText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/button_level_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonTestLevelText"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonTestLevelText" />
 
     <Button
         android:id="@+id/button_level_easy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonEasyLevelText"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@android:color/holo_green_light"/>
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/buttonEasyLevelText" />
 
     <Button
         android:id="@+id/button_level_normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonNormalLevelText"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@android:color/holo_orange_light"/>
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/buttonNormalLevelText" />
 
     <Button
         android:id="@+id/button_level_hard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonHardLevelText"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@android:color/holo_red_light"/>
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/buttonHardLevelText" />
 
 </LinearLayout>
