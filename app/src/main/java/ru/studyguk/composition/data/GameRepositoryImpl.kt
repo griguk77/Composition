@@ -27,14 +27,13 @@ object GameRepositoryImpl : GameRepository {
         return Question(sum, visibleNumber, options.toList())
     }
 
-    //
     override fun getGameSettings(level: Level): GameSettings {
         return when(level) {
             Level.TEST -> GameSettings(
                 10,
                 3,
                 50,
-                8
+                6
             )
             Level.EASY -> GameSettings(
                 10,
